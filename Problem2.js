@@ -19,9 +19,9 @@ if (90 <= grade) {
 } else {
     letter = "F"
 }
-if (grade == 100 || grade % 10 >= 7) {
+if ((grade == 100 || grade % 10 >= 7) && letter != "F") {
     letter += "+"
-} else if (grade % 10 <= 2) {
+} else if (grade % 10 <= 2 && letter != "F") {
     letter += "-"
 }
 
